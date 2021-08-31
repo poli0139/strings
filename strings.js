@@ -45,6 +45,11 @@ function generateOutput(event) {
     }
     console.log(result);
   }
+  if (select == "password") {
+    const inputLength = input.length;
+    const stars = input.slice(inputLength).padStart(inputLength, "*");
+    result = stars;
+  }
 
   if (select === "any_third") {
     result =
